@@ -26,7 +26,7 @@ const Message: React.FC = () => {
             }
           }}
         >
-          <img src="/panda.png" alt="Cute Panda" className="w-full h-full object-contain" />
+          <img src="/panda.webp" alt="Cute Panda" className="w-full h-full object-contain" />
         </motion.div>
 
         {/* Peeking Dog character (Waving from the top left corner of the card) */}
@@ -50,7 +50,7 @@ const Message: React.FC = () => {
             }
           }}
         >
-          <img src="/dog.png" alt="Cute Dog" className="w-full h-full object-contain" />
+          <img src="/dog.webp" alt="Cute Dog" className="w-full h-full object-contain" />
         </motion.div>
 
         <motion.div

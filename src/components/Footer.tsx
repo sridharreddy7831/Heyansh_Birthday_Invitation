@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div className="relative group">
             <div className="absolute inset-0 bg-[#e1ba72]/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <img 
-              src="/uthsav-logo.png" 
+              src="/uthsav-logo.webp" 
               alt="Uthsav Invites Logo" 
               className="h-12 md:h-14 w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.12)] pointer-events-none transition-all duration-500 group-hover:scale-110 relative z-10"
             />

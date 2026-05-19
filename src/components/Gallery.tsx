@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Heart } from 'lucide-react';
 
 const images = [
-  '/1.jpeg',
-  '/3.jpeg',
-  '/5.jpeg',
-  '/7.jpeg',
-  '/9.jpeg',
-  '/13.jpeg',
+  '/1.webp',
+  '/3.webp',
+  '/5.webp',
+  '/7.webp',
+  '/9.webp',
+  '/13.webp',
 ];
 
 // Helper Component: Renders solid, floating hearts rising from bottom to top inside each photo card

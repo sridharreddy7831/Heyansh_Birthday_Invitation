@@ -18,7 +18,7 @@ const FloatingAnimals: React.FC = () => {
           ease: "easeInOut"
         }}
       >
-        <img src="/dog.png" alt="Dog Party" className="w-full h-full object-contain mix-blend-multiply" />
+        <img src="/dog.webp" alt="Dog Party" className="w-full h-full object-contain mix-blend-multiply" />
       </motion.div>
 
       {/* Panda */}
@@ -36,7 +36,7 @@ const FloatingAnimals: React.FC = () => {
           delay: 1
         }}
       >
-        <img src="/panda.png" alt="Panda Party" className="w-full h-full object-contain mix-blend-multiply" />
+        <img src="/panda.webp" alt="Panda Party" className="w-full h-full object-contain mix-blend-multiply" />
       </motion.div>
 
       {/* Fox */}
@@ -54,7 +54,7 @@ const FloatingAnimals: React.FC = () => {
           delay: 0.5
         }}
       >
-        <img src="/fox.png" alt="Fox Party" className="w-full h-full object-contain mix-blend-multiply" />
+        <img src="/fox.webp" alt="Fox Party" className="w-full h-full object-contain mix-blend-multiply" />
       </motion.div>
     </div>
   );

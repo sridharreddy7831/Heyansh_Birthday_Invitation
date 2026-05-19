@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
         >
           {/* Real baby photo with zoom effect */}
           <img
-            src="/6.jpeg"
+            src="/6.webp"
             alt="Heyansh"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
         >
           {/* Banner Image */}
           <img 
-            src="/cat-banner.png" 
+            src="/cat-banner.webp" 
             alt="Cat Banner decoration" 
             className="w-full h-auto drop-shadow-xl"
           />
@@ -160,7 +160,7 @@ const Hero: React.FC = () => {
             }
           }}
         >
-          <img src="/dog.png" alt="Cute Dog" className="w-full h-full object-contain" />
+          <img src="/dog.webp" alt="Cute Dog" className="w-full h-full object-contain" />
         </motion.div>
       </div>
 
@@ -192,7 +192,7 @@ const Hero: React.FC = () => {
 
               {/* Large Image */}
               <img
-                src="/6.jpeg"
+                src="/6.webp"
                 alt="Heyansh Full Photo"
                 className="w-full h-auto max-h-[80vh] object-contain mx-auto"
               />
