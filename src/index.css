@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-birthday-bg text-birthday-text font-sans antialiased selection:bg-birthday-pink selection:text-white;
+    background-image: 
+      radial-gradient(#db2777 1px, transparent 1px),
+      radial-gradient(#db2777 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    background-attachment: fixed;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/60 backdrop-blur-md border border-white/40 shadow-xl;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-birthday-gold via-birthday-pink to-birthday-purple;
+  }
+  
+  .starburst-shape {
+    clip-path: polygon(50% 0%, 61% 16%, 80% 10%, 82% 29%, 100% 38%, 89% 56%, 98% 75%, 79% 82%, 76% 100%, 58% 91%, 38% 100%, 29% 83%, 10% 89%, 16% 70%, 0% 56%, 15% 40%, 4% 21%, 23% 18%, 29% 0%, 43% 14%);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-birthday-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-birthday-pink/50 rounded-full hover:bg-birthday-pink transition-colors;
+}
+
+/* Multi-colored Blinking String Lights Animations */
+@keyframes blink-red {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.95)); }
+  50% { opacity: 0.05; filter: drop-shadow(0 0 0px transparent); }
+}
+@keyframes blink-blue {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.95)); }
+  50% { opacity: 0.05; filter: drop-shadow(0 0 0px transparent); }
+}
+@keyframes blink-green {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.95)); }
+  50% { opacity: 0.05; filter: drop-shadow(0 0 0px transparent); }
+}
+@keyframes blink-yellow {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(234, 179, 8, 0.95)); }
+  50% { opacity: 0.05; filter: drop-shadow(0 0 0px transparent); }
+}
+@keyframes blink-pink {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(236, 72, 153, 0.95)); }
+  50% { opacity: 0.05; filter: drop-shadow(0 0 0px transparent); }
+}
+@keyframes blink-purple {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.95)); }
+  50% { opacity: 0.05; filter: drop-shadow(0 0 0px transparent); }
+}
+
+.blink-red-normal { animation: blink-red 2s ease-in-out infinite; }
+.blink-red-slow { animation: blink-red 3s ease-in-out infinite; }
+.blink-red-fast { animation: blink-red 1.2s ease-in-out infinite; }
+
+.blink-blue-normal { animation: blink-blue 2s ease-in-out infinite; }
+.blink-blue-slow { animation: blink-blue 3.2s ease-in-out infinite; }
+.blink-blue-fast { animation: blink-blue 1.3s ease-in-out infinite; }
+
+.blink-green-normal { animation: blink-green 2.2s ease-in-out infinite; }
+.blink-green-slow { animation: blink-green 3.4s ease-in-out infinite; }
+.blink-green-fast { animation: blink-green 1.4s ease-in-out infinite; }
+
+.blink-yellow-normal { animation: blink-yellow 1.8s ease-in-out infinite; }
+.blink-yellow-slow { animation: blink-yellow 2.8s ease-in-out infinite; }
+.blink-yellow-fast { animation: blink-yellow 1.1s ease-in-out infinite; }
+
+.blink-pink-normal { animation: blink-pink 2.1s ease-in-out infinite; }
+.blink-pink-slow { animation: blink-pink 3.1s ease-in-out infinite; }
+.blink-pink-fast { animation: blink-pink 1.25s ease-in-out infinite; }
+
+.blink-purple-normal { animation: blink-purple 2.3s ease-in-out infinite; }
+.blink-purple-slow { animation: blink-purple 3.3s ease-in-out infinite; }
+.blink-purple-fast { animation: blink-purple 1.35s ease-in-out infinite; }
+
+/* Sway animation for hanging banner */
+@keyframes sway-banner {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+
+.animate-swayOrigin {
+  animation: sway-banner 6s ease-in-out infinite;
+  transform-origin: 50% 0%;
+}
+
+/* Star strings sway animations */
+@keyframes sway-strand-1 {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+@keyframes sway-strand-2 {
+  0%, 100% { transform: rotate(1.2deg); }
+  50% { transform: rotate(-1.2deg); }
+}
+@keyframes sway-strand-3 {
+  0%, 100% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+}
+@keyframes sway-strand-4 {
+  0%, 100% { transform: rotate(0.8deg); }
+  50% { transform: rotate(-0.8deg); }
+}
+
+.sway-s1 { animation: sway-strand-1 5s ease-in-out infinite; transform-origin: top center; }
+.sway-s2 { animation: sway-strand-2 6.5s ease-in-out infinite; transform-origin: top center; }
+.sway-s3 { animation: sway-strand-3 5.8s ease-in-out infinite; transform-origin: top center; }
+.sway-s4 { animation: sway-strand-4 7.2s ease-in-out infinite; transform-origin: top center; }
+
+/* Gold twinkling star animations */
+@keyframes blink-gold-light {
+  0%, 100% { opacity: 0.45; filter: drop-shadow(0 0 2px rgba(251,191,36,0.3)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(251,191,36,0.9)); }
+}
+
+.blink-gold-1 { animation: blink-gold-light 2s ease-in-out infinite; }
+.blink-gold-2 { animation: blink-gold-light 2.6s ease-in-out infinite; }
+.blink-gold-3 { animation: blink-gold-light 3.2s ease-in-out infinite; }
+
+/* Lenis Smooth Scroll Helpers */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Prevent Google Maps iframe from trapping scroll pointer during scrolling active state */
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+
+
